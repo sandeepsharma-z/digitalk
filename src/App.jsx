@@ -5,6 +5,8 @@ import AnnouncementBar from './components/AnnouncementBar'
 import Navbar          from './components/Navbar'
 import Footer          from './components/Footer'
 import ScrollTop       from './components/ScrollTop'
+import ChatBot         from './components/ChatBot'
+import SocialSidebar   from './components/SocialSidebar'
 
 import HomePage      from './pages/HomePage'
 import ServicesPage  from './pages/ServicesPage'
@@ -51,6 +53,8 @@ function Layout() {
       </main>
       <Footer />
       <ScrollTop />
+      <SocialSidebar />
+      <ChatBot />
     </>
   )
 }
