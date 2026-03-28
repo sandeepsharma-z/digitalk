@@ -99,7 +99,7 @@ export default function Services() {
       <div className="orb w-[400px] h-[400px] -bottom-24 -left-20 animate-blob2 pointer-events-none"
         style={{ background: 'radial-gradient(circle,rgba(139,92,246,0.05),transparent 70%)' }} />
 
-      <div className="max-w-6xl mx-auto px-6 relative z-10">
+      <div className="max-w-[1440px] mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <span className="section-badge">What We Do</span>
           <h2 className="text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900 mb-4">

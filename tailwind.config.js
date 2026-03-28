@@ -18,6 +18,7 @@ export default {
         'grad-shift':   'gradShift 5s ease infinite',
         'scroll-wheel': 'scrollWheel 1.5s ease-in-out infinite',
         'badge-pulse':  'badgePulse 1.5s ease infinite',
+        'spin-slow':    'spinSlow 18s linear infinite',
       },
       keyframes: {
         float:       { '0%,100%': { transform: 'translateY(0)' },       '50%': { transform: 'translateY(-12px)' } },
@@ -28,6 +29,7 @@ export default {
         gradShift:   { '0%': { backgroundPosition: '0% 50%' }, '50%': { backgroundPosition: '100% 50%' }, '100%': { backgroundPosition: '0% 50%' } },
         scrollWheel: { '0%': { opacity: '1', transform: 'translateY(0)' }, '100%': { opacity: '0', transform: 'translateY(8px)' } },
         badgePulse:  { '0%,100%': { opacity: '1' }, '50%': { opacity: '0.5' } },
+        spinSlow:    { from: { transform: 'rotate(0deg)' }, to: { transform: 'rotate(360deg)' } },
       },
     },
   },

@@ -7,7 +7,6 @@ const points = [
   ['Growth Partners', 'We grow when your business grows'],
 ]
 
-const teamColors = ['from-blue-400 to-blue-600', 'from-emerald-400 to-emerald-600', 'from-purple-400 to-purple-600', 'from-orange-400 to-orange-600']
 
 export default function About() {
   const { ref: r1, visible: v1 } = useReveal()
@@ -21,7 +20,7 @@ export default function About() {
       <div className="orb w-[300px] h-[300px] -bottom-12 left-[5%] animate-blob2 pointer-events-none"
         style={{ background: 'radial-gradient(circle,rgba(139,92,246,0.08),transparent 70%)' }} />
 
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-[1440px] mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-20 items-center">
 
           {/* Text */}
@@ -51,29 +50,53 @@ export default function About() {
 
           {/* Visual */}
           <div ref={r2} className={`transition-all duration-700 delay-150 ${v2 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
-            <div className="glass rounded-3xl p-7 animate-float-med shadow-[0_20px_60px_rgba(59,130,246,0.10)]">
-              <div className="grid grid-cols-2 gap-3 mb-4">
-                {teamColors.map((g, i) => (
-                  <div key={i} className="flex items-center gap-3 bg-white rounded-xl p-3 shadow-sm">
-                    <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${g} flex-shrink-0`} />
-                    <div>
-                      <div className="h-2.5 w-16 bg-gray-200 rounded mb-1.5" />
-                      <div className="h-2 w-12 bg-gray-100 rounded" />
-                    </div>
-                  </div>
-                ))}
+            <div className="relative">
+              {/* main image */}
+              <div className="rounded-3xl overflow-hidden shadow-[0_24px_64px_rgba(59,130,246,0.18)] animate-float-med">
+                <img
+                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=85&fit=crop"
+                  alt="DigiTalk Team"
+                  className="w-full object-cover"
+                  style={{ height: '380px' }}
+                />
+                {/* gradient overlay */}
+                <div className="absolute inset-0 rounded-3xl"
+                  style={{ background: 'linear-gradient(180deg, transparent 50%, rgba(15,23,42,0.65) 100%)' }} />
               </div>
-              <div className="flex items-center gap-3 p-3.5 rounded-xl border border-blue-100"
-                style={{ background: 'linear-gradient(135deg,rgba(59,130,246,0.06),rgba(29,78,216,0.04))' }}>
-                <span className="text-3xl">🏆</span>
-                <div>
-                  <div className="text-sm font-bold text-gray-900">Top IT Agency</div>
-                  <div className="text-xs text-blue-500 font-semibold">2024 Award</div>
+
+              {/* bottom overlay text */}
+              <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between">
+                <div className="text-white">
+                  <div className="text-xl font-extrabold leading-tight">DigiTalk Team</div>
+                  <div className="text-xs text-white/60 mt-0.5">50+ Experts across Web, App & Marketing</div>
+                </div>
+                <div className="flex items-center gap-2 px-3 py-2 rounded-xl"
+                  style={{ background: 'rgba(255,255,255,0.12)', backdropFilter: 'blur(14px)', WebkitBackdropFilter: 'blur(14px)', border: '1px solid rgba(255,255,255,0.2)' }}>
+                  <span className="text-xl">🏆</span>
+                  <div>
+                    <div className="text-xs font-bold text-white leading-none">Top IT Agency</div>
+                    <div className="text-[10px] text-blue-300 mt-0.5">2024 Award</div>
+                  </div>
                 </div>
               </div>
+
+              {/* floating stat cards */}
+              <div className="absolute -top-4 -right-4 px-4 py-3 rounded-2xl shadow-lg animate-float"
+                style={{ background: 'white', border: '1px solid rgba(59,130,246,0.15)' }}>
+                <div className="text-2xl font-extrabold text-blue-600 leading-none">500+</div>
+                <div className="text-xs text-gray-500 mt-0.5 font-medium">Projects Delivered</div>
+              </div>
+
+              <div className="absolute -bottom-4 -left-4 px-4 py-3 rounded-2xl shadow-lg animate-float-slow"
+                style={{ background: 'white', border: '1px solid rgba(139,92,246,0.15)' }}>
+                <div className="text-2xl font-extrabold text-purple-500 leading-none">98%</div>
+                <div className="text-xs text-gray-500 mt-0.5 font-medium">Client Satisfaction</div>
+              </div>
             </div>
-            <div className="flex flex-wrap gap-2 mt-4">
-              {['React','Next.js','Flutter','Node.js','AWS'].map(t => (
+
+            {/* tech stack tags */}
+            <div className="flex flex-wrap gap-2 mt-8">
+              {['React','Next.js','Flutter','Node.js','AWS','WordPress'].map(t => (
                 <span key={t} className="px-3 py-1.5 rounded-full text-xs font-semibold text-gray-700 bg-white border border-gray-200 shadow-sm">{t}</span>
               ))}
             </div>

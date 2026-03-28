@@ -25,7 +25,7 @@ function WhyCard({ emoji, title, desc, delay }) {
 export default function WhyUs() {
   return (
     <section className="py-24 bg-[#f8faff]">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-[1440px] mx-auto px-6">
         <div className="text-center mb-14">
           <span className="section-badge">Why DigiTalk</span>
           <h2 className="text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900">

@@ -24,7 +24,7 @@ export default function Process() {
   return (
     <section className="py-24 bg-white relative overflow-hidden">
       <div className="absolute inset-0 grid-pattern opacity-60 pointer-events-none" />
-      <div className="max-w-6xl mx-auto px-6 relative z-10">
+      <div className="max-w-[1440px] mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <span className="section-badge">Our Process</span>
           <h2 className="text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900">

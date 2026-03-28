@@ -29,7 +29,7 @@ export default function ImpactStats() {
         style={{ background: 'radial-gradient(circle,rgba(29,78,216,0.25),transparent 70%)' }} />
       <div className="absolute inset-0 grid-pattern opacity-30 pointer-events-none" />
 
-      <div className="max-w-6xl mx-auto px-6 relative z-10">
+      <div className="max-w-[1440px] mx-auto px-6 relative z-10">
         <div className="text-center mb-14">
           <span className="section-badge-light">Our Impact</span>
           <h2 className="text-4xl lg:text-5xl font-extrabold tracking-tight text-white">

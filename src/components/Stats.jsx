@@ -34,7 +34,7 @@ function StatCard({ icon, label, target, suffix, color, bar }) {
 export default function Stats() {
   return (
     <section className="py-14 bg-white relative z-10">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-[1440px] mx-auto px-6">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
           {stats.map(s => <StatCard key={s.label} {...s} />)}
         </div>
