@@ -118,25 +118,13 @@ export default function Contact() {
                 ))}
               </div>
             </div>
-            {/* Map visual */}
-            <div className="relative h-44 rounded-2xl overflow-hidden" style={{ border: '1px solid #bfdbfe' }}>
-              <img
-                src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80&fit=crop"
-                alt="Office location"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg,rgba(59,130,246,0.45),rgba(29,78,216,0.30))' }} />
-              <div className="absolute inset-0 flex flex-col items-center justify-center gap-2">
-                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-lg">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
-                  </svg>
-                </div>
-                <div className="text-center">
-                  <div className="text-sm font-bold text-white">123 Innovation Ave</div>
-                  <div className="text-xs text-white/80">Tech City, CA 90210</div>
-                </div>
-              </div>
+            {/* Location */}
+            <div className="h-24 rounded-2xl flex items-center justify-center gap-3"
+              style={{ background: 'linear-gradient(135deg,#eff6ff,#dbeafe)', border: '1px solid #bfdbfe' }}>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span className="text-base font-bold text-blue-700">New Delhi, India</span>
             </div>
           </div>
 
