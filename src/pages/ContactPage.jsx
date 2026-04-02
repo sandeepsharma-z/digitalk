@@ -4,19 +4,19 @@ import { useReveal } from '../hooks/useReveal'
 const info = [
   {
     icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.18 2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.45-.45a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>,
-    title: 'Phone', val: '+1 (555) 123-4567', link: 'tel:+15551234567', color: 'blue',
+    title: 'Phone', val: '+91 96676 74425 / +91 98914 55836', link: 'tel:+919667674425', color: 'blue',
   },
   {
     icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>,
-    title: 'Email', val: 'hello@digitalk.io', link: 'mailto:hello@digitalk.io', color: 'purple',
+    title: 'Email', val: 'digitalk9891@gmail.com', link: 'mailto:digitalk9891@gmail.com', color: 'purple',
   },
   {
     icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>,
-    title: 'Office', val: '123 Innovation Ave, Tech City, CA 90210', link: '#', color: 'green',
+    title: 'Office', val: 'H.No.-2810, Gali No.- E-68, 2nd 60 Feet Road, Molarband Extn. Badarpur Border, New Delhi', link: '#', color: 'green',
   },
   {
     icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>,
-    title: 'Hours', val: 'Mon–Fri: 9AM–6PM EST', link: '#', color: 'orange',
+    title: 'Hours', val: 'Mon–Sat: 9AM–7PM IST', link: '#', color: 'orange',
   },
 ]
 

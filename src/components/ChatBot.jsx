@@ -52,7 +52,7 @@ const FLOWS = {
     ],
   },
   human: {
-    msg: "Absolutely! Our team is available **Mon–Fri, 9AM–6PM EST** 🕐\n\n📧 hello@digitalk.io\n📞 +1 (555) 123-4567\n\nOr fill out our contact form and we'll get back to you within **2–4 hours**!",
+    msg: "Absolutely! Our team is available **Mon–Sat, 9AM–7PM IST** 🕐\n\n📧 digitalk9891@gmail.com\n📞 +91 96676 74425\n📞 +91 98914 55836\n\nOr fill out our contact form and we'll get back to you within **2–4 hours**!",
     chips: [
       { label: '📝 Contact Form', next: 'contact_redirect' },
       { label: '🔙 Back to Menu', next: 'start' },
